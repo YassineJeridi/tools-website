@@ -1,0 +1,802 @@
+{
+  "title": "400 Free Tools and Resources",
+  "subtitle": "For Entrepreneurs and Startups",
+  "categories": [
+    {
+      "id": "website",
+      "name": "Free Website",
+      "icon": "🌐",
+      "tools": [
+        {
+          "name": "HTML5 UP",
+          "description": "Responsive HTML5 and CSS3 site templates",
+          "url": "https://html5up.net"
+        },
+        {
+          "name": "Bootswatch",
+          "description": "Free themes for Bootstrap",
+          "url": "https://bootswatch.com"
+        },
+        {
+          "name": "Templated",
+          "description": "A collection of 845 free CSS & HTML5 site templates",
+          "url": "https://templated.co"
+        },
+        {
+          "name": "WordPress.org | WordPress.com",
+          "description": "Create your new website for free",
+          "url": "https://wordpress.org"
+        },
+        {
+          "name": "Strikingly",
+          "description": "Free, unlimited mobile optimized websites for strikingly domains",
+          "url": "https://www.strikingly.com"
+        },
+        {
+          "name": "Layers",
+          "description": "A WordPress site builder so simple. It's free, forever",
+          "url": "https://www.layerswp.com"
+        },
+        {
+          "name": "Bootstrap Zero",
+          "description": "The largest open-source, free Bootstrap template collection",
+          "url": "https://www.bootstrapzero.com"
+        },
+        {
+          "name": "Landing Harbor",
+          "description": "Promote your mobile app with a free landing page",
+          "url": "https://landingharbor.com"
+        }
+      ]
+    },
+    {
+      "id": "branding",
+      "name": "Free Branding & Logo",
+      "icon": "🎨",
+      "tools": [
+        {
+          "name": "Logaster",
+          "description": "Professional online logo maker & generator",
+          "url": "https://www.logaster.com"
+        },
+        {
+          "name": "Hipster Logo Generator",
+          "description": "It's Hip, It's Current, It's Stylish, It's Hipster",
+          "url": "https://www.hipsterlogogenerator.com"
+        },
+        {
+          "name": "Squarespace Free Logo",
+          "description": "You can download free low-res version for free",
+          "url": "https://logo.squarespace.com"
+        },
+        {
+          "name": "Signature Maker",
+          "description": "A free web based tool that creates your handwritten digital signature",
+          "url": "https://signature-maker.net"
+        }
+      ]
+    },
+    {
+      "id": "invoice",
+      "name": "Free Invoice",
+      "icon": "💰",
+      "tools": [
+        {
+          "name": "Invoice to me",
+          "description": "Free Invoice Generator",
+          "url": "https://invoice-to.me"
+        },
+        {
+          "name": "Free Invoice Generator",
+          "description": "Alternative free invoice generator",
+          "url": "https://www.free-invoice-generator.com"
+        },
+        {
+          "name": "Slimvoice",
+          "description": "Insanely simple invoices",
+          "url": "https://slimvoice.co"
+        },
+        {
+          "name": "Wave",
+          "description": "Free & easy accounting, invoicing and more",
+          "url": "https://www.waveapps.com"
+        },
+        {
+          "name": "Invoice.to",
+          "description": "Free invoice generator",
+          "url": "https://invoice.to"
+        }
+      ]
+    },
+    {
+      "id": "legal",
+      "name": "Free Legal Docs",
+      "icon": "📜",
+      "tools": [
+        {
+          "name": "Kiss",
+          "description": "Free legal docs for startup founders and investor",
+          "url": "https://500.co/kiss"
+        },
+        {
+          "name": "Docracy",
+          "description": "An open collection of free legal documents",
+          "url": "https://www.docracy.com"
+        },
+        {
+          "name": "Shake",
+          "description": "Create, sign and send legally binding agreements in seconds. Free for personal use",
+          "url": "https://www.shakelaw.com"
+        }
+      ]
+    },
+    {
+      "id": "idea",
+      "name": "Free Idea Management",
+      "icon": "💡",
+      "tools": [
+        {
+          "name": "Experiment Board",
+          "description": "Test your startup idea without wasting time or money",
+          "url": "https://www.experimentboard.com"
+        },
+        {
+          "name": "Germ.io",
+          "description": "Get from idea to execution",
+          "url": "https://germ.io"
+        },
+        {
+          "name": "Skitch",
+          "description": "Your ideas become reality faster",
+          "url": "https://evernote.com/products/skitch"
+        }
+      ]
+    },
+    {
+      "id": "namegen",
+      "name": "Business / Project Name Generators",
+      "icon": "🏷️",
+      "tools": [
+        {
+          "name": "The Name App",
+          "description": "Find an available name for your brilliant idea",
+          "url": "https://thenameapp.com"
+        },
+        {
+          "name": "Naminum",
+          "description": "Discover a perfect company name",
+          "url": "https://www.naminum.com"
+        },
+        {
+          "name": "Short Domain Search",
+          "description": "Find short, available single-word domain names",
+          "url": "https://shortdomainsearch.com"
+        },
+        {
+          "name": "Wordoid",
+          "description": "Pick a short and catchy name for your business",
+          "url": "https://wordoid.com"
+        },
+        {
+          "name": "Hipster Business Name",
+          "description": "Hipster business name generator",
+          "url": "https://www.hipsterbusiness.name"
+        },
+        {
+          "name": "Impossibility",
+          "description": "The best domain name generator ever",
+          "url": "https://impossibility.org"
+        },
+        {
+          "name": "Lean Domain Search",
+          "description": "Find a domain name for your website in seconds",
+          "url": "https://leandomainsearch.com"
+        },
+        {
+          "name": "Domainr",
+          "description": "Fast, free, domain name search, short URLs",
+          "url": "https://domainr.com"
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "name": "Writing / Blogging",
+      "icon": "✍️",
+      "tools": [
+        {
+          "name": "Hemingway",
+          "description": "Hemingway App makes your writing bold and clear",
+          "url": "https://hemingwayapp.com"
+        },
+        {
+          "name": "Grammarly",
+          "description": "Finds & corrects mistakes of your writing",
+          "url": "https://www.grammarly.com"
+        },
+        {
+          "name": "Medium",
+          "description": "Everyone's stories and ideas",
+          "url": "https://medium.com"
+        },
+        {
+          "name": "ZenPen",
+          "description": "The minimal writing tool of web",
+          "url": "https://www.zenpen.io"
+        },
+        {
+          "name": "Liberio",
+          "description": "Simple eBook creation and publishing right from Google Drive",
+          "url": "https://liber.io"
+        },
+        {
+          "name": "Editorial Calendar",
+          "description": "See all your posts, drag & drop to manage your blog",
+          "url": "https://wordpress.org/plugins/editorial-calendar"
+        },
+        {
+          "name": "CoSchedule",
+          "description": "Blog post headline analyzer",
+          "url": "https://coschedule.com/headline-analyzer"
+        },
+        {
+          "name": "Wattpad",
+          "description": "The world's largest community for readers and writers",
+          "url": "https://www.wattpad.com"
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "name": "Find Trending Content",
+      "icon": "📈",
+      "tools": [
+        {
+          "name": "Portent",
+          "description": "Content idea generator",
+          "url": "https://www.portent.com/tools/title-maker"
+        },
+        {
+          "name": "Google Trends",
+          "description": "A new way of displaying trending searches",
+          "url": "https://trends.google.com"
+        },
+        {
+          "name": "Buzzsumo",
+          "description": "Analyze what content performs best for any topic or competitor",
+          "url": "https://buzzsumo.com"
+        },
+        {
+          "name": "Hubspot Blog Topic Generator",
+          "description": "Custom blog ideas",
+          "url": "https://www.hubspot.com/blog-topic-generator"
+        },
+        {
+          "name": "Swayy",
+          "description": "Discover the most engaging content. Free for 1 dashboard user",
+          "url": "https://www.swayy.co"
+        },
+        {
+          "name": "Ruzzit",
+          "description": "Find the most shared content on the web",
+          "url": "https://www.ruzzit.com"
+        }
+      ]
+    },
+    {
+      "id": "seo",
+      "name": "SEO + Website Analyzers",
+      "icon": "🔍",
+      "tools": [
+        {
+          "name": "Open Site Explorer",
+          "description": "A comprehensive tool for link analysis",
+          "url": "https://moz.com/link-explorer"
+        },
+        {
+          "name": "Ahrefs",
+          "description": "Site explorer & backlink checker",
+          "url": "https://ahrefs.com"
+        },
+        {
+          "name": "Quick Sprout",
+          "description": "Complete analysis of your website",
+          "url": "https://www.quicksprout.com"
+        },
+        {
+          "name": "WordPress SEO by Yoast",
+          "description": "Have a fully optimized WordPress site",
+          "url": "https://yoast.com"
+        },
+        {
+          "name": "SEO Site Checkup",
+          "description": "Check your website's SEO problems for free",
+          "url": "https://seositecheckup.com"
+        },
+        {
+          "name": "Hubspot Marketing Grader",
+          "description": "Grade your marketing",
+          "url": "https://website.grader.com"
+        },
+        {
+          "name": "SimilarWeb",
+          "description": "Analyze website statistics for any domain",
+          "url": "https://www.similarweb.com"
+        },
+        {
+          "name": "Google Analytics",
+          "description": "Analytics | Keyword Planner | Webmaster Tools | Trends",
+          "url": "https://analytics.google.com"
+        },
+        {
+          "name": "Google Pagespeed Insights",
+          "description": "Check the performance of your site",
+          "url": "https://pagespeed.web.dev"
+        },
+        {
+          "name": "GTMetrics",
+          "description": "Analyze your page's speed performance",
+          "url": "https://gtmetrix.com"
+        }
+      ]
+    },
+    {
+      "id": "images",
+      "name": "Image Optimizers",
+      "icon": "🖼️",
+      "tools": [
+        {
+          "name": "TinyJPG | TinyPNG",
+          "description": "Compress images",
+          "url": "https://tinypng.com"
+        },
+        {
+          "name": "Compressor.io",
+          "description": "Optimize and compress your images online",
+          "url": "https://compressor.io"
+        },
+        {
+          "name": "Kraken",
+          "description": "Optimize your images & accelerate your websites",
+          "url": "https://kraken.io"
+        },
+        {
+          "name": "ImageOptim",
+          "description": "Makes images take up less disk space & load faster",
+          "url": "https://imageoptim.com"
+        }
+      ]
+    },
+    {
+      "id": "editors",
+      "name": "Image Editors",
+      "icon": "🎭",
+      "tools": [
+        {
+          "name": "Canva",
+          "description": "Amazingly simple graphic design for bloggers",
+          "url": "https://www.canva.com"
+        },
+        {
+          "name": "Pixlr",
+          "description": "Pixlr Editor is a robust browser photo editor",
+          "url": "https://pixlr.com"
+        },
+        {
+          "name": "Easel.ly",
+          "description": "Empowers anyone to create & share powerful visuals",
+          "url": "https://www.easel.ly"
+        },
+        {
+          "name": "Placeit",
+          "description": "Free product mockups & templates",
+          "url": "https://placeit.net"
+        },
+        {
+          "name": "Pablo",
+          "description": "Design engaging images for your social media posts in under 30 seconds",
+          "url": "https://pablo.buffer.com"
+        }
+      ]
+    },
+    {
+      "id": "email",
+      "name": "Email Management",
+      "icon": "📧",
+      "tools": [
+        {
+          "name": "Mailchimp",
+          "description": "Send 12,000 emails to 2,000 subscribers for free",
+          "url": "https://mailchimp.com"
+        },
+        {
+          "name": "Hello Bar",
+          "description": "Get more email subscribers",
+          "url": "https://www.hellobar.com"
+        },
+        {
+          "name": "Sumome List Builder",
+          "description": "Collect email addresses with light box popover",
+          "url": "https://sumo.com"
+        },
+        {
+          "name": "Mandrill",
+          "description": "The fastest way to deliver email. Free 12K emails/month",
+          "url": "https://mandrillapp.com"
+        },
+        {
+          "name": "Mailgun",
+          "description": "The Email Service For Developers. Free 10K emails/month",
+          "url": "https://www.mailgun.com"
+        },
+        {
+          "name": "Sendgrid",
+          "description": "Delivers your transactional and marketing email. Free 12K emails/month",
+          "url": "https://sendgrid.com"
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "Social Media Management",
+      "icon": "📱",
+      "tools": [
+        {
+          "name": "Buffer Free Plan",
+          "description": "Schedule posts to Twitter, Facebook, LinkedIn, Google+",
+          "url": "https://buffer.com"
+        },
+        {
+          "name": "Bitly",
+          "description": "Create, share, and track shortened links",
+          "url": "https://bitly.com"
+        },
+        {
+          "name": "Click To Tweet",
+          "description": "Get more shares on your content",
+          "url": "https://clicktotweet.com"
+        },
+        {
+          "name": "Latergram",
+          "description": "Easily plan & schedule your Instagram posts",
+          "url": "https://later.com"
+        },
+        {
+          "name": "Ritetag",
+          "description": "Instant hashtag analysis",
+          "url": "https://ritetag.com"
+        },
+        {
+          "name": "SocialRank",
+          "description": "Identify, organize, and manage your followers on Twitter",
+          "url": "https://socialrank.com"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "name": "Design Resources",
+      "icon": "🎨",
+      "tools": [
+        {
+          "name": "Freebbble",
+          "description": "High-quality design freebies from Dribbble",
+          "url": "https://freebbble.com"
+        },
+        {
+          "name": "Graphic Burger",
+          "description": "Tasty design resources made with care for each pixel",
+          "url": "https://graphicburger.com"
+        },
+        {
+          "name": "Pixel Buddha",
+          "description": "Free and premium resources for professional community",
+          "url": "https://pixelbuddha.net"
+        },
+        {
+          "name": "Freebiesbug",
+          "description": "Latest free PSDs & other resources for designers",
+          "url": "https://freebiesbug.com"
+        },
+        {
+          "name": "UI Space",
+          "description": "High quality hand-crafted Freebies for awesome people",
+          "url": "https://uispace.net"
+        }
+      ]
+    },
+    {
+      "id": "colors",
+      "name": "Color Pickers",
+      "icon": "🌈",
+      "tools": [
+        {
+          "name": "Material Palette",
+          "description": "Generate & export your Material Design color palette",
+          "url": "https://www.materialpalette.com"
+        },
+        {
+          "name": "Coolors",
+          "description": "Super fast color schemes generator for cool designers",
+          "url": "https://coolors.co"
+        },
+        {
+          "name": "Flat UI Colors",
+          "description": "Beautiful flat colors",
+          "url": "https://flatuicolors.com"
+        },
+        {
+          "name": "Adobe Color CC",
+          "description": "Color combinations from the Kuler community",
+          "url": "https://color.adobe.com"
+        },
+        {
+          "name": "Brand Colors",
+          "description": "Colors used by famous brands",
+          "url": "https://brandcolors.net"
+        }
+      ]
+    },
+    {
+      "id": "inspiration",
+      "name": "Inspiration",
+      "icon": "✨",
+      "tools": [
+        {
+          "name": "MaterialUp",
+          "description": "Daily material design inspiration",
+          "url": "https://www.materialup.com"
+        },
+        {
+          "name": "Site Inspire",
+          "description": "Web design inspiration",
+          "url": "https://www.siteinspire.com"
+        },
+        {
+          "name": "Dribbble",
+          "description": "Show and tell for designers",
+          "url": "https://dribbble.com"
+        },
+        {
+          "name": "Behance",
+          "description": "Showcase & discover creative work",
+          "url": "https://www.behance.net"
+        },
+        {
+          "name": "Awwwards",
+          "description": "The awards for design, creativity and innovation",
+          "url": "https://www.awwwards.com"
+        },
+        {
+          "name": "One Page Love",
+          "description": "Resource for one-page website inspiration",
+          "url": "https://onepagelove.com"
+        }
+      ]
+    },
+    {
+      "id": "photos",
+      "name": "Stock Photography",
+      "icon": "📷",
+      "tools": [
+        {
+          "name": "Unsplash",
+          "description": "Free (do whatever you want) high-resolution photos",
+          "url": "https://unsplash.com"
+        },
+        {
+          "name": "Pexels",
+          "description": "Best free photos in one place",
+          "url": "https://www.pexels.com"
+        },
+        {
+          "name": "Pixabay",
+          "description": "Free high-quality images",
+          "url": "https://pixabay.com"
+        },
+        {
+          "name": "Stock Up",
+          "description": "Best free stock photo websites in one place",
+          "url": "https://www.sitebuilderreport.com/stock-up"
+        },
+        {
+          "name": "Gratisography",
+          "description": "Free high-resolution photos",
+          "url": "https://gratisography.com"
+        },
+        {
+          "name": "Life of Pix",
+          "description": "Free high-resolution photos",
+          "url": "https://www.lifeofpix.com"
+        }
+      ]
+    },
+    {
+      "id": "typography",
+      "name": "Typography",
+      "icon": "🔤",
+      "tools": [
+        {
+          "name": "Google Fonts",
+          "description": "Free, open-source fonts optimized for the web",
+          "url": "https://fonts.google.com"
+        },
+        {
+          "name": "Font Squirrel",
+          "description": "100% free commercial fonts",
+          "url": "https://www.fontsquirrel.com"
+        },
+        {
+          "name": "DaFont",
+          "description": "Archive of freely downloadable fonts",
+          "url": "https://www.dafont.com"
+        },
+        {
+          "name": "TypeGenius",
+          "description": "Find the perfect font combo for your next project",
+          "url": "https://www.typegenius.com"
+        }
+      ]
+    },
+    {
+      "id": "icons",
+      "name": "Icons",
+      "icon": "⭐",
+      "tools": [
+        {
+          "name": "Font Awesome",
+          "description": "The iconic font and CSS toolkit",
+          "url": "https://fontawesome.com"
+        },
+        {
+          "name": "Material Design Icons",
+          "description": "750 Free open-source glyphs by Google",
+          "url": "https://materialdesignicons.com"
+        },
+        {
+          "name": "Flat Icon",
+          "description": "A search engine for 16000+ glyph vector icons",
+          "url": "https://www.flaticon.com"
+        },
+        {
+          "name": "The Noun Project",
+          "description": "Thousands of glyph icons from different artists",
+          "url": "https://thenounproject.com"
+        },
+        {
+          "name": "Ico Moon",
+          "description": "4000+ free vector icons, icon generator",
+          "url": "https://icomoon.io"
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "name": "Development Tools",
+      "icon": "💻",
+      "tools": [
+        {
+          "name": "GitHub",
+          "description": "Build software better, together",
+          "url": "https://github.com"
+        },
+        {
+          "name": "BitBucket",
+          "description": "Git and Mercurial code management for teams",
+          "url": "https://bitbucket.org"
+        },
+        {
+          "name": "Visual Studio",
+          "description": "Comprehensive collection of developer tools and services",
+          "url": "https://visualstudio.microsoft.com"
+        },
+        {
+          "name": "Codacy",
+          "description": "Continuous Static Analysis designed to complement your unit tests",
+          "url": "https://www.codacy.com"
+        },
+        {
+          "name": "StartSSL",
+          "description": "Free SSL certificates",
+          "url": "https://www.startssl.com"
+        }
+      ]
+    },
+    {
+      "id": "organize",
+      "name": "Organize & Collaborate",
+      "icon": "🤝",
+      "tools": [
+        {
+          "name": "Trello",
+          "description": "Keeps track of everything",
+          "url": "https://trello.com"
+        },
+        {
+          "name": "Slack",
+          "description": "Free for unlimited users with few limited features",
+          "url": "https://slack.com"
+        },
+        {
+          "name": "Evernote",
+          "description": "The workspace for your life's work",
+          "url": "https://evernote.com"
+        },
+        {
+          "name": "Dropbox",
+          "description": "Free space up to 2GB",
+          "url": "https://www.dropbox.com"
+        },
+        {
+          "name": "Asana",
+          "description": "Teamwork without email",
+          "url": "https://asana.com"
+        },
+        {
+          "name": "Google Hangouts",
+          "description": "Bring conversations to life with photos, emoji and group video calls",
+          "url": "https://hangouts.google.com"
+        }
+      ]
+    },
+    {
+      "id": "learn",
+      "name": "Learn",
+      "icon": "🎓",
+      "tools": [
+        {
+          "name": "Coursera",
+          "description": "Free online classes from 80+ top universities & organizations",
+          "url": "https://www.coursera.org"
+        },
+        {
+          "name": "Khan Academy",
+          "description": "Free, world-class education for anyone, anywhere",
+          "url": "https://www.khanacademy.org"
+        },
+        {
+          "name": "Codecademy",
+          "description": "Learn to code interactively, for free",
+          "url": "https://www.codecademy.com"
+        },
+        {
+          "name": "Skillshare",
+          "description": "Unlock your creativity with free online classes & projects",
+          "url": "https://www.skillshare.com"
+        },
+        {
+          "name": "Hackdesign",
+          "description": "Receive a design lesson in your inbox each week",
+          "url": "https://hackdesign.org"
+        }
+      ]
+    },
+    {
+      "id": "useful",
+      "name": "Useful Tools",
+      "icon": "🔧",
+      "tools": [
+        {
+          "name": "Foundrs",
+          "description": "Co-founder equity calculator",
+          "url": "https://foundrs.com"
+        },
+        {
+          "name": "HowMuchToMakeAnApp",
+          "description": "Calculate the cost of a mobile application",
+          "url": "https://howmuchtomakeanapp.com"
+        },
+        {
+          "name": "App vs. Website",
+          "description": "Should you build an app or website?",
+          "url": "https://www.appvswebsite.com"
+        },
+        {
+          "name": "Startup Equity Calculator",
+          "description": "Figure out how much equity to grant new hires in seconds",
+          "url": "https://www.captable.io"
+        }
+      ]
+    }
+  ]
+}
