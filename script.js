@@ -165,52 +165,29 @@ function displaySearchResults(results, query) {
         searchResults.innerHTML = `
             <div class="search-no-results">
                 <div class="search-no-results-icon">🔍</div>
-                <h3>No results found</h3>
+                <p>No tools found for "${query}"</p>
                 <p>Try searching with different keywords</p>
             </div>
         `;
         return;
     }
 
-    searchResults.innerHTML = results.slice(0, 20).map(tool => `
-        <div class="search-result-item" onclick="scrollToTool('${tool.categoryId}')">
+    searchResults.innerHTML = results.map(tool => `
+        <a href="${tool.url}" class="search-result-item" target="_blank" rel="noopener noreferrer">
             <div class="search-result-category">${tool.categoryIcon} ${tool.categoryName}</div>
-            <div class="search-result-name">${highlightText(tool.name, query)}</div>
-            <div class="search-result-desc">${highlightText(tool.description, query)}</div>
-        </div>
+            <div class="search-result-name">${tool.name}</div>
+            <div class="search-result-desc">${tool.description}</div>
+        </a>
     `).join('');
-}
-
-function highlightText(text, query) {
-    const regex = new RegExp(`(${query})`, 'gi');
-    return text.replace(regex, '<mark style="background: #fef3c7; padding: 2px 4px; border-radius: 3px;">$1</mark>');
-}
-
-function scrollToTool(categoryId) {
-    const searchModal = document.getElementById('searchModal');
-    searchModal.classList.remove('active');
-
-    setTimeout(() => {
-        const element = document.getElementById(categoryId);
-        if (element) {
-            const offsetTop = element.offsetTop - 100;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    }, 300);
 }
 
 // ========== RENDER CATEGORIES ==========
 function renderCategories() {
-    if (!toolsData) return;
-
     const categoriesGrid = document.getElementById('categoriesGrid');
+    if (!categoriesGrid || !toolsData) return;
 
     const html = toolsData.categories.map(category => `
-        <div class="category-card loading" onclick="scrollToTool('${category.id}')" 
-             data-category="${getCategoryType(category.name)}">
+        <div class="category-card" onclick="scrollToCategory('${category.id}')">
             <span class="category-icon">${category.icon}</span>
             <h3 class="category-name">${category.name}</h3>
             <p class="category-count">${category.tools.length} tools</p>
@@ -218,74 +195,21 @@ function renderCategories() {
     `).join('');
 
     categoriesGrid.innerHTML = html;
-
-    // Init category filters
-    initCategoryFilters();
-}
-
-function getCategoryType(name) {
-    const lowerName = name.toLowerCase();
-    if (lowerName.includes('design') || lowerName.includes('color') || 
-        lowerName.includes('icon') || lowerName.includes('typography') || 
-        lowerName.includes('photo') || lowerName.includes('image') ||
-        lowerName.includes('inspiration') || lowerName.includes('branding')) {
-        return 'design';
-    }
-    if (lowerName.includes('develop') || lowerName.includes('code') || lowerName.includes('github')) {
-        return 'development';
-    }
-    if (lowerName.includes('seo') || lowerName.includes('social') || 
-        lowerName.includes('email') || lowerName.includes('marketing') ||
-        lowerName.includes('content') || lowerName.includes('writing')) {
-        return 'marketing';
-    }
-    return 'business';
-}
-
-function initCategoryFilters() {
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const categoryCards = document.querySelectorAll('.category-card');
-
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Update active button
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            const filter = btn.dataset.filter;
-
-            // Filter categories
-            categoryCards.forEach(card => {
-                if (filter === 'all' || card.dataset.category === filter) {
-                    card.style.display = 'block';
-                    card.style.animation = 'fadeInUp 0.5s ease forwards';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-    });
 }
 
 // ========== RENDER TOOLS ==========
 function renderTools() {
-    if (!toolsData) return;
-
     const toolsContainer = document.getElementById('toolsContainer');
+    if (!toolsContainer || !toolsData) return;
 
     const html = toolsData.categories.map(category => `
-        <div class="category-section loading" id="${category.id}">
+        <div class="category-section" id="${category.id}">
             <div class="category-header">
                 <span class="category-header-icon">${category.icon}</span>
                 <h2 class="category-header-title">${category.name}</h2>
             </div>
             <div class="tools-grid">
-                ${category.tools.map(tool => `
-                    <div class="tool-card">
-                        <h3 class="tool-name">${tool.name}</h3>
-                        <p class="tool-description">${tool.description}</p>
-                    </div>
-                `).join('')}
+                ${renderCategoryTools(category)}
             </div>
         </div>
     `).join('');
@@ -293,12 +217,63 @@ function renderTools() {
     toolsContainer.innerHTML = html;
 }
 
+function renderCategoryTools(category) {
+    return category.tools.map(tool => `
+        <a href="${tool.url}" class="tool-card" target="_blank" rel="noopener noreferrer">
+            <h3 class="tool-name">${tool.name}</h3>
+            <p class="tool-description">${tool.description}</p>
+        </a>
+    `).join('');
+}
+
+// ========== SCROLL TO CATEGORY ==========
+function scrollToCategory(categoryId) {
+    const element = document.getElementById(categoryId);
+    if (element) {
+        const offsetTop = element.offsetTop - 80;
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    }
+}
+
+// ========== UPDATE TOOL COUNT ==========
+function updateToolCount() {
+    if (!toolsData) return;
+
+    const totalTools = toolsData.categories.reduce(
+        (sum, category) => sum + category.tools.length, 
+        0
+    );
+
+    const toolCountElement = document.querySelector('.stat-number');
+    if (toolCountElement) {
+        animateNumber(toolCountElement, totalTools);
+    }
+}
+
+// ========== ANIMATE NUMBER ==========
+function animateNumber(element, target) {
+    let current = 0;
+    const increment = target / 50;
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            element.textContent = target + '+';
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(current) + '+';
+        }
+    }, 30);
+}
+
 // ========== BACK TO TOP ==========
 function initBackToTop() {
     const backToTop = document.getElementById('backToTop');
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 500) {
+        if (window.scrollY > 300) {
             backToTop.classList.add('visible');
         } else {
             backToTop.classList.remove('visible');
@@ -315,28 +290,29 @@ function initBackToTop() {
 
 // ========== ANIMATIONS ==========
 function initAnimations() {
-    // Intersection Observer for fade-in animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('loading');
+                observer.unobserve(entry.target);
             }
         });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    });
+    }, observerOptions);
 
-    // Observe all loading elements
+    // Observe tool cards
     setTimeout(() => {
-        document.querySelectorAll('.loading').forEach(el => {
-            observer.observe(el);
+        document.querySelectorAll('.tool-card, .category-card').forEach(card => {
+            observer.observe(card);
         });
     }, 100);
 }
 
-// ========== UTILITIES ==========
+// ========== UTILITY FUNCTIONS ==========
 function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -348,28 +324,3 @@ function debounce(func, wait) {
         timeout = setTimeout(later, wait);
     };
 }
-
-function updateToolCount() {
-    const toolCountElement = document.getElementById('toolCount');
-    if (toolCountElement && allTools.length > 0) {
-        animateCount(toolCountElement, allTools.length, 2000);
-    }
-}
-
-function animateCount(element, target, duration) {
-    let start = 0;
-    const increment = target / (duration / 16);
-
-    const timer = setInterval(() => {
-        start += increment;
-        if (start >= target) {
-            element.textContent = target + '+';
-            clearInterval(timer);
-        } else {
-            element.textContent = Math.floor(start) + '+';
-        }
-    }, 16);
-}
-
-// ========== EXPORT FOR INLINE USE ==========
-window.scrollToTool = scrollToTool;
